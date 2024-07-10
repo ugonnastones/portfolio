@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Start Navigation Bar -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand"><a href="http://github.com/ugonnastones"><img src="./loogooo.png" style="width: 50px; height: 36px;"></a></span>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#portfolio-link">Designs</a></li>
+          <li><a href="#about-link">About</a></li>
+          <li><a href="#contact-link">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- End Navagation Bar -->
+  <!-- Start Splash Section  -->
+  <a class="anchor" id="home"></a>
+  <div id="splash" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Ugstones</h1>
+        <hr />
+        <p>
+          Frontend Developer
+        </p>
+        <p>
+          <a href="https://github.com/ugonnastones" ><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="https://uk.linkedin.com/in/nnodim-johnmartins-276946248" ><i class="fa fa-linkedin-square fa-3x"></i></a>
+          <a href="https://facebook.com/profile.php?id=100070230161671" ><i class="fa fa-facebook-square fa-2x"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End Splash Section  -->
+
+  
+  <a class="anchor" id="portfolio-link"></a>
+  
+    <div id="portfolio" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>Design</h1>
+          <hr /> 
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="thumbnail fly">
+                    <img class="img-responsive" src="./Classic Screenshot.jpg" >
+                  </a>
+                  <div class="caption">
+                    <h3>Food Page</h3>
+                    <p>Using Html, css,Bootstrap,Javascript to build a professional food page</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="thumbnail fly">
+                    <img class="img-responsive" src="./Guess my number Screenshot .png">
+                  </a>
+                  <div class="caption">
+                    <h3>Guess my Number Game</h3>
+                    <p>Built with Html,Css and Javascript</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="thumbnail fly">
+                    <img src="./pig game Screenshot.jpg">
+                  </a>
+                  <div class="caption">
+                    <h3>Pig game</h3>
+                    <p>Built with Html,Css and Javascript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+              
+          
+    <!-- End portfolio Section  -->
+
+    <a class="anchor" id="about-link"></a>
+    <div id="about" class="container-fluid text-center">
+          <h1>About</h1>
+          <hr />
+          <div class="container">
+            <div class="row row-eq-height">
+              <!-- <div class="col-lg-1"></div> -->
+              <div class="col-lg-3">
+                <img class="img-responsive img-circle center-block" src="./me 1.jpeg" alt="Hasham-Babar" />
+              </div>
+              <div id="white-bg" class="col-lg-8">
+                <p>
+                  Hi,<br>
+                  I'm Ugonna <br>
+                  Certified Frontend Developer and Backend Developer(php).<br>
+                  Qualified Software Test Analyst with some years of practical experience. 
+                  
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    <!-- End About Section -->
+
+
+
+
+
+<!-- Start Contact Section -->
+<a class="anchor" id="contact-link"></a>
+<div id="contact" class="container-fluid text-center">
+  <h1>Contact</h1>
+  <hr />
+  <form onsubmit="mail (event)">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6 form-group mt-3 mt-md-0">
+        <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+      </div>
+    </div>
+    
+    <div class="form-group mt-3">
+      <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+    </div>
+    
+    <div class="text-center"><button type="submit">Send Message</button></div>
+  </form>
+  <script>
+    function mail(event) {
+        // Prevent the form from submitting and refreshing the page
+        event.preventDefault();
+
+        // Get the subject and message values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        // Log values for debugging
+        console.log('Name:', name);
+        console.log('Email:', email);
+
+        // Create the subject for the email
+        var subject = 'New Message from'+ name +'(' + email + ')';
+        console.log('Message:', message);
+
+        // Create the mailto URL
+        var url = 'mailto:nnodimjohnmartins@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
+
+        // Log URL for debugging
+        console.log('Mailto URL:', url);
+
+        // Redirect to the mailto URL
+        window.location.href = url;
+    }
+</script>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Social</h2>
+        <a href="https://facebook.com/profile.php?id=100070230161671">
+          <span class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="https://uk.linkedin.com/in/nnodim-johnmartins-276946248">
+          <span class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="https://github.com/ugonnastones">
+          <span class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <h2>Location</h2>
+        <address>
+          Enugu,
+          Enugu state,
+          Nigeria.
+        </address>
+        <div class="embed-responsive embed-responsive-4by3 you">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.883705462694!2d7.500160310422907!3d6.408978893555023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a116301fa0a1%3A0x47d497ebe6a0b349!2sUmualor%20St%2C%20Uwani%2C%20Enugu%20400107%2C%20Enugu!5e0!3m2!1sen!2sng!4v1720620438540!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+      <div class="col-lg-4">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Contact Section -->
+
+<footer>
+  <div class="container-fluid text-center">
+    <p>Copyright &copy; 2024 Ugstones</p>
+  </div>  
+</footer>
+    
+</body>
+</html>
