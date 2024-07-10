@@ -145,7 +145,7 @@
 <div id="contact" class="container-fluid text-center">
   <h1>Contact</h1>
   <hr />
-  <form action="">
+  <form onsubmit="mail (event)">
     <div class="row">
       <div class="col-md-6 form-group">
         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -159,14 +159,36 @@
       <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
     </div>
     
-    <div class="text-center"><button type="submit" onclick="mail()">Send Message</button></div>
+    <div class="text-center"><button type="submit">Send Message</button></div>
   </form>
   <script>
-    function mail() {
-      var url = 'mailto:nnodimjohnmartins@gmail.com?subject=' + document.getElementById('subject').value + '&body=' + document.getElementById('message').value;
-      window.location.href = url;
+    function mail(event) {
+        // Prevent the form from submitting and refreshing the page
+        event.preventDefault();
+
+        // Get the subject and message values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        // Log values for debugging
+        console.log('Name:', name);
+        console.log('Email:', email);
+
+        // Create the subject for the email
+        var subject = 'New Message from'+ name +'(' + email + ')';
+        console.log('Message:', message);
+
+        // Create the mailto URL
+        var url = 'mailto:nnodimjohnmartins@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
+
+        // Log URL for debugging
+        console.log('Mailto URL:', url);
+
+        // Redirect to the mailto URL
+        window.location.href = url;
     }
-  </script>
+</script>
 
   <div class="container">
     <div class="row">
